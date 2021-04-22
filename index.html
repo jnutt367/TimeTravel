@@ -24,6 +24,8 @@
         /*wormhole controls the width of the entire animation due to positioning and inheritence */
         
         #wormhole {
+            display: grid;
+            align-items: center;
             background-color: black;
             width: 600px;
             top: -20px;
@@ -178,9 +180,9 @@
         }
         
         #second-red-bubble-small {
-            width: 20px;
+            width: 30px;
             position: relative;
-            top: -900px;
+            top: -1400px;
             left: 400px;
             z-index: 2;
         }
@@ -200,13 +202,36 @@
             left: 522px;
             z-index: 5;
         }
+        
+        #volcano3 {
+            height: 150px;
+            width: 150px;
+            position: relative;
+            left: 450px;
+            top: -1230px;
+            z-index: 2;
+        }
+        
+        #lava-stream-small {
+            width: 13px;
+            position: relative;
+            top: -1381px;
+            left: 530px;
+            z-index: 5;
+        }
+        
+        h1 {
+            color: skyblue;
+            text-transform: uppercase;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
 
-
+    <h1>Take a trip down the worm hole</h1>
 
     <div id="wormhole">
         <img id="wormhole-svg" src="SVG/SVG/Asset 225.svg">
@@ -283,6 +308,17 @@
         <img src="SVG/SVG/assets2/SVG/Asset 63.svg">
     </div>
 
+
+    <div id="volcano3">
+        <img src="SVG/SVG/assets2/SVG/Asset 39.svg">
+    </div>
+    <div id="lava-stream-small">
+        <img src="SVG/SVG/assets2/SVG/Asset 65.svg">
+    </div>
+
+    <div id="second-red-bubble-small">
+        <img src="SVG/SVG/assets2/SVG/Asset 44.svg">
+    </div>
     <div id="background">
         <img src="SVG/SVG/Asset 168.svg">
     </div>
