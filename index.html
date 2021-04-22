@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: grey;
+        }
+        
+        body {
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 600px;
+            top: 40px;
+            margin: 0 100px;
+            background-color: white;
+        }
+        /*wormhole controls the width of the entire animation due to positioning and inheritence */
+        
+        #wormhole {
+            background-color: black;
+            width: 600px;
+            top: -20px;
+            position: relative;
+        }
+        
+        svg {
+            height: 300px;
+            width: 300px;
+        }
+        
+        #hourglass {
+            height: 50px;
+            width: 50px;
+        }
+        
+        .title {
+            margin-top: 200px;
+            height: 100px;
+            padding: 20px;
+            background-color: white;
+            position: relative;
+            z-index: 1;
+        }
+        
+        #topline {
+            position: relative;
+            z-index: 2;
+            top: 1em;
+        }
+        
+        #cloud {
+            position: relative;
+            height: 10px;
+            width: 250px;
+            top: -700px;
+            left: 77px;
+            z-index: 2;
+        }
+        
+        #cloud2 {
+            height: 150px;
+            width: 150px;
+            position: relative;
+            top: -660px;
+            left: 500px;
+            z-index: 2;
+        }
+        
+        .dino-days-bg {
+            position: relative;
+            top: -100px;
+            z-index: 1;
+        }
+        
+        #next {
+            height: 600px;
+        }
+        
+        #wormhole-svg {
+            position: relative;
+            top: 70px;
+            fill: black;
+        }
+        
+        #volcano {
+            height: 200px;
+            width: 300px;
+            position: relative;
+            top: -670px;
+            z-index: 3;
+        }
+        
+        #volcano2 {
+            height: 150px;
+            width: 200px;
+            position: relative;
+            left: 450px;
+            top: -888px;
+            z-index: 2;
+        }
+        
+        #lava {
+            height: 10px;
+            width: 23px;
+            position: relative;
+            top: -1000px;
+            left: 100px;
+            z-index: 2;
+        }
+        
+        #background {
+            position: relative;
+            top: -550px;
+            z-index: 2;
+        }
+        
+        #red-bubble {
+            width: 50px;
+            position: relative;
+            top: -1020px;
+            left: 350px;
+            z-index: 2;
+        }
+        
+        #red-bubble-small {
+            width: 20px;
+            position: relative;
+            top: -1050px;
+            left: 400px;
+            z-index: 2;
+        }
+        
+        #thin-redline {
+            width: 100px;
+            top: -1028px;
+            left: 360px;
+            z-index: 2;
+            position: relative;
+        }
+        
+        #top-red-curve-line {
+            position: relative;
+            width: 180px;
+            top: -1060px;
+            left: 195px;
+            z-index: 2;
+        }
+        
+        #bottom-red-curve-line {
+            position: relative;
+            width: 100px;
+            top: -1050px;
+            left: 280px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+    <div id="wormhole">
+        <img id="wormhole-svg" src="SVG/SVG/Asset 225.svg">
+    </div>
+
+    <!-- Dino Days!-->
+    <div class="title">
+        <img src="SVG/SVG/Asset 138.svg">
+
+    </div>
+
+    <div id="topline">
+        <img src="SVG/SVG/Asset 215.svg">
+    </div>
+
+    <div class="dino-days-bg">
+
+        <img src="SVG/SVG/Asset 216.svg">
+    </div>
+
+
+    <div id="cloud">
+        <img src="SVG/SVG/SVG/Asset 249.svg">
+    </div>
+    <div id="cloud2">
+        <img src="SVG/SVG/assets2/SVG/Asset 33.svg">
+    </div>
+    <div id="volcano">
+        <img src="SVG/SVG/assets2/SVG/Asset 37.svg">
+    </div>
+    <div id="volcano2">
+        <img src="SVG/SVG/assets2/SVG/Asset 38.svg">
+    </div>
+
+    <div id="lava">
+        <img src="SVG/SVG/Asset 192.svg">
+    </div>
+    <div id="red-bubble">
+        <img src="SVG/SVG/assets2/SVG/Asset 44.svg">
+    </div>
+
+    <div id="red-bubble-small">
+        <img src="SVG/SVG/assets2/SVG/Asset 44.svg">
+
+    </div>
+    <div id="thin-redline">
+        <img src="SVG/SVG/SVG/Asset 250.svg ">
+
+    </div>
+
+
+    <div id="top-red-curve-line">
+        <img src="SVG/SVG/Asset 200.svg">
+
+    </div>
+
+    <div id="bottom-red-curve-line">
+        <img src="SVG/SVG/assets2/SVG/Asset 50.svg">
+    </div>
+
+
+
+
+
+
+
+    <div id="background">
+        <img src="SVG/SVG/Asset 168.svg">
+    </div>
+    <div id="next">
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+    <script src="gsap.js"></script>
+</body>
+
+</html>
