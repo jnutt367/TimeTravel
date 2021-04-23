@@ -20,4 +20,6 @@ let tl = gsap.timeline({
     .to("#volcano", { x: 5, y: -2, duration: .01, ease: "rough", repeat: -1 })
     .to("#second-red-bubble-small", { duration: 1.7, scale: 0.6, ease: "bounce", repeat: -1 })
     .to("#second-red-bubble", { duration: 1.1, scale: 1.4, ease: "bounce", repeat: -1 })
-    .to("#first-tree", { x: 2, duration: .1, ease: "rough", repeat: -1 })
+    .to("#first-tree", { x: 2, duration: .3, ease: "rough", repeat: 10 })
+    .to("#big-green-palm-leaf", { duration: 3, y: 300, rotate: 90 })
+    .to("#big-green-palm-leaf-2", { duration: 3, y: 300, rotate: 360 });
