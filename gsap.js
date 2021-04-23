@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger)
 let tl = gsap.timeline({
     scrollTrigger: {
         trigger: "#volcano",
-        duration: 5,
+        duration: 2,
         markers: true,
         start: "top 70%",
         end: "end 40%",
@@ -12,7 +12,7 @@ let tl = gsap.timeline({
 })
 
 .to("#cloud", { duration: 1.9, y: 100, scale: 1.1, ease: "elastic", y: -10, repeat: -1 })
-    .to("#terry", { duration: 4, x: 400, y: -650, ease: "elastic" })
+    .to("#terry", { duration: 2, x: 400, y: -750, ease: "back" })
     .to("#terry", { duration: 2, x: 777, ease: "power1" })
     .from("#cloud2", { duration: 2, scale: 1.1, ease: "back", y: -10, repeat: -1 })
     .to("#red-bubble", { duration: 2, scale: 0.6, ease: "bounce", repeat: -1 })
@@ -22,4 +22,4 @@ let tl = gsap.timeline({
     .to("#second-red-bubble", { duration: 1.1, scale: 1.4, ease: "bounce", repeat: -1 })
     .to("#first-tree", { x: 2, duration: .3, ease: "rough", repeat: 10 })
     .to("#big-green-palm-leaf", { duration: 3, y: 300, rotate: 90 })
-    .to("#big-green-palm-leaf-2", { duration: 3, y: 300, rotate: 360 });
+    .to("#big-green-palm-leaf-2", { duration: 3, y: 300, rotate: 395 });
