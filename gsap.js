@@ -23,5 +23,5 @@ let tl = gsap.timeline({
     .to("#second-red-bubble-small", { duration: 1.7, scale: 0.6, ease: "bounce", repeat: -1 })
     .to("#second-red-bubble", { duration: 1.1, scale: 1.4, ease: "bounce", repeat: -1 })
     .to("#first-tree", { x: 2, duration: .3, ease: "rough", repeat: 10 })
-    .to("#big-green-palm-leaf", { duration: 3, y: 300, rotate: 1150 })
-    .to("#big-green-palm-leaf-2", { duration: 3, y: 300, rotate: 395 });
+    .to("#big-green-palm-leaf", { duration: 3, y: 185, rotate: 1150 })
+    .to("#big-green-palm-leaf-2", { duration: 3, y: 175, rotate: 395 });
